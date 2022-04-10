@@ -30,11 +30,11 @@ Currently: linear vel 0.0 angular vel 0.0
 plt.figure(1)
 plt.plot(x, y)
 plt.show()»
- тогда выведется желаемая.
+, тогда выведется желаемая.
 •	В функции «def real_draw(new_encoders)» закомментировать 
 «if (len(real_y) and len(real_x)) == 200:
 plt.figure(2)
 plt.plot(real_x, real_y)
 plt.show()»
- тогда выведется реальная.
+, тогда выведется реальная.
 
