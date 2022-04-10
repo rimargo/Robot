@@ -1,20 +1,21 @@
 # Robot
-Симуляция управления роботом Робот с дифференциальным приводом, управление которым осуществляется с помощью клавиатуры, используя ROS.
-# Порядок действий
+Симуляция робота с дифференциальным приводом, управление которым осуществляется при помощи пакета turtlebot3_teleop, используя ROS.
+Порядок действий
+=====================
 1) Скопировать папку beginner_tutorial в catckin_ws/src
 2) Для управления симуляцией нужно клонировать репозиторий https://github.com/ROBOTISGIT/turtlebot3 в ~/catkin_ws/src 
 3) Скачать библиотеки numpy и matplotlib.
-4) Собрать проект 
+4) Собрать проект с помощью двух команд:
 `$ cd ~/catkin_ws/`
-$ catkin_make 
+`$ catkin_make`
 5) В первом терминале запустить ядро Ros
-$ roscore
+`$ roscore`
 6) Через второй терминал запустить клонированный репозиторий с GitHub 
-$ export TURTLEBOT3_MODEL=waffle; roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+`$ export TURTLEBOT3_MODEL=waffle; roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch`
 7) Через третий терминал запустить скрипт listener.py
-$ rosrun beginner_tutorial listener.py
+`$ rosrun beginner_tutorial listener.py`
 8) Через четвертый терминал запустить скрипт talker.py
-$ rosrun beginner_tutorial talker.py
+`$ rosrun beginner_tutorial talker.py`
 # Работа скриптов:
 1. Скрипт turtlebot3_teleop находится в репозитории GitHub. Он предназначен для управления робота с помощью кнопок клавиатуры. При запуске появляется инструкция по управлению.
 В консоль выводится значения линейных и угловых скоростей, которые изменяются при нажатии на кнопки: 
