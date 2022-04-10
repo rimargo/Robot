@@ -5,7 +5,7 @@
 2) Для управления симуляцией нужно клонировать репозиторий https://github.com/ROBOTISGIT/turtlebot3 в ~/catkin_ws/src 
 3) Скачать библиотеки numpy и matplotlib.
 4) Собрать проект 
-$ cd ~/catkin_ws/
+'$ cd ~/catkin_ws/'
 $ catkin_make 
 5) В первом терминале запустить ядро Ros
 $ roscore
